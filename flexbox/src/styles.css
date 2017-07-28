@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+}
+
+body {
+  color: slategray;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+header {
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+header nav {
+  background-color: aquamarine;
+  height: 80px;
+}
+
+section {
+  margin: 8px;
+}
+
+.back {
+  background-color: #f18aac;
+  height: 50px;
+  width: 100%;
+}
+
+.center-content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.class {
+  background-color: lightblue;
+  height: 100px;
+  margin-bottom: 16px;
+}
+
+.class:last-child {
+  margin-bottom: 0px;
+}
+
+.class-list {
+  max-width: 724px;
+  width: 100%;
+}
+
+.left-panel {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+  width: 100%;
+}
+
+.left-panel-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.page-container {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.personal-info {
+  background-color: #c2a4ff;
+  height: 200px;
+  width: inherit;
+}
+
+.placement {
+  background-color: peachpuff;
+  height: 200px;
+  width: 100%;
+}
+
+.space-items > div {
+  margin-bottom: 16px;
+}
+
+.space-items > div:last-child {
+  margin-bottom: 0;
+}
+
+/* tablet */
+@media only screen and (min-width: 674px) and (max-width: 1247px) {
+  .left-panel {
+    max-width: 724px;
+  }
+
+  .left-panel-content.space-items > div {
+    margin: 0 8px 0 0;
+  }
+
+  .left-panel-content.space-items > div:last-child {
+    margin: 0;
+  }
+
+  .personal-info, .placement {
+    flex: 1;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 1248px) {
+  .back {
+    order: 1;
+  }
+
+  .left-panel > div:last-child {
+    margin-bottom: 16px;
+  }
+}
